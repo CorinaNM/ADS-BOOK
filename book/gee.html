@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Introduction &#8212; Advanced Data Science</title>
+    <title>Google earth engine &#8212; Advanced Data Science</title>
   
   
   
@@ -171,14 +171,7 @@
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Introduction</a></li>
-
-
-
-
-
-
-
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Google earth engine</a></li>
 <li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bibliography.html">Bibliography</a></li>
@@ -433,7 +426,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Introduction</h1>
+    <h1>Google earth engine</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -443,78 +436,77 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Introduction</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#description">Description</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#useful-links">Useful links</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisite">Prerequisite</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-up-a-conda-environment">Set up a conda environment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#description">Description</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#useful-links">Useful links</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisite">Prerequisite</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#set-up-a-conda-environment">Set up a conda environment</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#geemap-basics">geemap basics</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#import-libraries">Import libraries</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-an-interactive-map">Create an interactive map</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#customize-the-default-map">Customize the default map</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#add-basemaps">Add basemaps</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#change-basemaps-without-coding">Change basemaps without coding</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#add-wms-and-xyz-tile-layers">Add WMS and XYZ tile layers</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#use-drawing-tools">Use drawing tools</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#convert-gee-javascript-to-python">Convert GEE JavaScript to Python</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geemap-basics">geemap basics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#import-libraries">Import libraries</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-an-interactive-map">Create an interactive map</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#customize-the-default-map">Customize the default map</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#add-basemaps">Add basemaps</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#change-basemaps-without-coding">Change basemaps without coding</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#add-wms-and-xyz-tile-layers">Add WMS and XYZ tile layers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#use-drawing-tools">Use drawing tools</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#convert-gee-javascript-to-python">Convert GEE JavaScript to Python</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#earth-engine-datasets">Earth Engine datasets</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-earth-engine-datasets">Load Earth Engine datasets</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#search-the-earth-engine-data-catalog">Search the Earth Engine Data Catalog</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#use-the-datasets-module">Use the datasets module</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#use-the-inspector-tool">Use the Inspector tool</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#earth-engine-datasets">Earth Engine datasets</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#load-earth-engine-datasets">Load Earth Engine datasets</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#search-the-earth-engine-data-catalog">Search the Earth Engine Data Catalog</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#use-the-datasets-module">Use the datasets module</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#use-the-inspector-tool">Use the Inspector tool</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-visualization">Data visualization</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#use-the-plotting-tool">Use the Plotting tool</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#change-layer-opacity">Change layer opacity</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualize-raster-data">Visualize raster data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualize-vector-data">Visualize vector data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#add-a-legend">Add a legend</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#add-a-colorbar">Add a colorbar</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-split-panel-map">Create a split-panel map</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-linked-maps">Create linked maps</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-timelapse-animations">Create timelapse animations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-time-series-composites">Create time-series composites</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-visualization">Data visualization</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#use-the-plotting-tool">Use the Plotting tool</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#change-layer-opacity">Change layer opacity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visualize-raster-data">Visualize raster data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visualize-vector-data">Visualize vector data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#add-a-legend">Add a legend</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#add-a-colorbar">Add a colorbar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-split-panel-map">Create a split-panel map</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-linked-maps">Create linked maps</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-timelapse-animations">Create timelapse animations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-time-series-composites">Create time-series composites</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-analysis">Data analysis</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#descriptive-statistics">Descriptive statistics</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zonal-statistics">Zonal statistics</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zonal-statistics-by-group">Zonal statistics by group</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unsupervised-classification">Unsupervised classification</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#supervised-classification">Supervised classification</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#training-sample-creation">Training sample creation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#whiteboxtools">WhiteboxTools</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-analysis">Data analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#descriptive-statistics">Descriptive statistics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#zonal-statistics">Zonal statistics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#zonal-statistics-by-group">Zonal statistics by group</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unsupervised-classification">Unsupervised classification</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#supervised-classification">Supervised classification</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#training-sample-creation">Training sample creation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#whiteboxtools">WhiteboxTools</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#map-making">Map making</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-a-single-band-image">Plot a single band image</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-an-rgb-image">Plot an RGB image</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#add-map-elements">Add map elements</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-multiple-layers">Plot multiple layers</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#use-custom-projections">Use custom projections</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Create timelapse animations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#map-making">Map making</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-a-single-band-image">Plot a single band image</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-an-rgb-image">Plot an RGB image</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#add-map-elements">Add map elements</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-multiple-layers">Plot multiple layers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#use-custom-projections">Use custom projections</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Create timelapse animations</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-export">Data export</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#export-ee-image">Export ee.Image</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#export-ee-imagecollection">Export ee.ImageCollection</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extract-pixels-as-a-numpy-array">Extract pixels as a numpy array</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#export-pixel-values-to-points">Export pixel values to points</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#export-ee-featurecollection">Export ee.FeatureCollection</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-export">Data export</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#export-ee-image">Export ee.Image</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#export-ee-imagecollection">Export ee.ImageCollection</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extract-pixels-as-a-numpy-array">Extract pixels as a numpy array</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#export-pixel-values-to-points">Export pixel values to points</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#export-ee-featurecollection">Export ee.FeatureCollection</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#web-apps">Web apps</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deploy-web-apps-using-ngrok">Deploy web apps using ngrok</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deploy-web-apps-using-heroku">Deploy web apps using Heroku</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#web-apps">Web apps</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deploy-web-apps-using-ngrok">Deploy web apps using ngrok</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deploy-web-apps-using-heroku">Deploy web apps using Heroku</a></li>
 </ul>
 </li>
 </ul>
-
             </nav>
         </div>
     </div>
@@ -525,16 +517,20 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <p><strong>Interactive mapping and analysis of geospatial big data using geemap and Google Earth Engine</strong></p>
+  <section class="tex2jax_ignore mathjax_ignore" id="google-earth-engine">
+<h1>Google earth engine<a class="headerlink" href="#google-earth-engine" title="Link to this heading">#</a></h1>
+<p>‘’’{contents}</p>
+<p>‘’’</p>
+<p><strong>Interactive mapping and analysis of geospatial big data using geemap and Google Earth Engine</strong></p>
 <p>This notebook was developed for the geemap workshop at the <a class="reference external" href="https://2021.geopython.net">GeoPython 2021 Conference</a>.</p>
 <p>Authors: <a class="reference external" href="https://github.com/giswqs">Qiusheng Wu</a>, <a class="reference external" href="https://github.com/KMarkert">Kel Markert</a></p>
 <p>Link to this notebook: <a class="reference external" href="https://gishub.org/geopython">https://gishub.org/geopython</a></p>
 <p>Recorded video: <a class="reference external" href="https://www.youtube.com/watch?v=wGjpjh9IQ5I">https://www.youtube.com/watch?v=wGjpjh9IQ5I</a></p>
 <p><a class="reference external" href="https://www.youtube.com/watch?v=wGjpjh9IQ5I"><img alt="geemap workship" src="https://img.youtube.com/vi/wGjpjh9IQ5I/0.jpg" /></a></p>
 <section id="introduction">
-<h1>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h1>
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
 <section id="description">
-<h2>Description<a class="headerlink" href="#description" title="Link to this heading">#</a></h2>
+<h3>Description<a class="headerlink" href="#description" title="Link to this heading">#</a></h3>
 <p>Google Earth Engine (GEE) is a cloud computing platform with a multi-petabyte catalog of satellite imagery and geospatial datasets. It enables scientists, researchers, and developers to analyze and visualize changes on the Earth’s surface. The geemap Python package provides GEE users with an intuitive interface to manipulate, analyze, and visualize geospatial big data interactively in a Jupyter-based environment. The topics to be covered in this workshop include:</p>
 <ol class="arabic simple">
 <li><p>Introducing geemap and the Earth Engine Python API</p></li>
@@ -549,7 +545,7 @@ document.write(`
 <p>This workshop is intended for scientific programmers, data scientists, geospatial analysts, and concerned citizens of Earth. The attendees are expected to have a basic understanding of Python and the Jupyter ecosystem. Familiarity with Earth science and geospatial datasets is useful but not required.</p>
 </section>
 <section id="useful-links">
-<h2>Useful links<a class="headerlink" href="#useful-links" title="Link to this heading">#</a></h2>
+<h3>Useful links<a class="headerlink" href="#useful-links" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p><a class="reference external" href="https://2021.geopython.net">GeoPython 2021 Conference website</a></p></li>
 <li><p><a class="reference external" href="https://earthengine.google.com">Google Earth Engine</a></p></li>
@@ -560,14 +556,14 @@ document.write(`
 </ul>
 </section>
 <section id="prerequisite">
-<h2>Prerequisite<a class="headerlink" href="#prerequisite" title="Link to this heading">#</a></h2>
+<h3>Prerequisite<a class="headerlink" href="#prerequisite" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>A Google Earth Engine account. Sign up <a class="reference external" href="https://earthengine.google.com">here</a> if needed.</p></li>
 <li><p><a class="reference external" href="https://docs.anaconda.com/free/miniconda">Miniconda</a> or <a class="reference external" href="https://www.anaconda.com/products/individual">Anaconda</a></p></li>
 </ul>
 </section>
 <section id="set-up-a-conda-environment">
-<h2>Set up a conda environment<a class="headerlink" href="#set-up-a-conda-environment" title="Link to this heading">#</a></h2>
+<h3>Set up a conda environment<a class="headerlink" href="#set-up-a-conda-environment" title="Link to this heading">#</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">create</span> <span class="o">-</span><span class="n">n</span> <span class="n">geo</span> <span class="n">python</span><span class="o">=</span><span class="mf">3.8</span>
 <span class="n">conda</span> <span class="n">activate</span> <span class="n">geo</span>
 <span class="n">conda</span> <span class="n">install</span> <span class="n">geemap</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span>
@@ -578,9 +574,9 @@ document.write(`
 </section>
 </section>
 <section id="geemap-basics">
-<h1>geemap basics<a class="headerlink" href="#geemap-basics" title="Link to this heading">#</a></h1>
+<h2>geemap basics<a class="headerlink" href="#geemap-basics" title="Link to this heading">#</a></h2>
 <section id="import-libraries">
-<h2>Import libraries<a class="headerlink" href="#import-libraries" title="Link to this heading">#</a></h2>
+<h3>Import libraries<a class="headerlink" href="#import-libraries" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
@@ -604,7 +600,7 @@ document.write(`
 </div>
 </section>
 <section id="create-an-interactive-map">
-<h2>Create an interactive map<a class="headerlink" href="#create-an-interactive-map" title="Link to this heading">#</a></h2>
+<h3>Create an interactive map<a class="headerlink" href="#create-an-interactive-map" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Map</span> <span class="o">=</span> <span class="n">geemap</span><span class="o">.</span><span class="n">Map</span><span class="p">()</span>
@@ -615,7 +611,7 @@ document.write(`
 </div>
 </section>
 <section id="customize-the-default-map">
-<h2>Customize the default map<a class="headerlink" href="#customize-the-default-map" title="Link to this heading">#</a></h2>
+<h3>Customize the default map<a class="headerlink" href="#customize-the-default-map" title="Link to this heading">#</a></h3>
 <p>You can specify the center(lat, lon) and zoom for the default map. The lite mode will only show the zoom in/out tool.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -627,7 +623,7 @@ document.write(`
 </div>
 </section>
 <section id="add-basemaps">
-<h2>Add basemaps<a class="headerlink" href="#add-basemaps" title="Link to this heading">#</a></h2>
+<h3>Add basemaps<a class="headerlink" href="#add-basemaps" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Map</span> <span class="o">=</span> <span class="n">geemap</span><span class="o">.</span><span class="n">Map</span><span class="p">()</span>
@@ -654,7 +650,7 @@ document.write(`
 </div>
 </section>
 <section id="change-basemaps-without-coding">
-<h2>Change basemaps without coding<a class="headerlink" href="#change-basemaps-without-coding" title="Link to this heading">#</a></h2>
+<h3>Change basemaps without coding<a class="headerlink" href="#change-basemaps-without-coding" title="Link to this heading">#</a></h3>
 <p><img alt="" src="https://i.imgur.com/PXURCSP.png" /></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -666,7 +662,7 @@ document.write(`
 </div>
 </section>
 <section id="add-wms-and-xyz-tile-layers">
-<h2>Add WMS and XYZ tile layers<a class="headerlink" href="#add-wms-and-xyz-tile-layers" title="Link to this heading">#</a></h2>
+<h3>Add WMS and XYZ tile layers<a class="headerlink" href="#add-wms-and-xyz-tile-layers" title="Link to this heading">#</a></h3>
 <p>Examples: <a class="reference external" href="https://viewer.nationalmap.gov/services/">https://viewer.nationalmap.gov/services/</a></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -691,7 +687,7 @@ document.write(`
 </div>
 </section>
 <section id="use-drawing-tools">
-<h2>Use drawing tools<a class="headerlink" href="#use-drawing-tools" title="Link to this heading">#</a></h2>
+<h3>Use drawing tools<a class="headerlink" href="#use-drawing-tools" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Map</span> <span class="o">=</span> <span class="n">geemap</span><span class="o">.</span><span class="n">Map</span><span class="p">()</span>
@@ -716,7 +712,7 @@ document.write(`
 </div>
 </section>
 <section id="convert-gee-javascript-to-python">
-<h2>Convert GEE JavaScript to Python<a class="headerlink" href="#convert-gee-javascript-to-python" title="Link to this heading">#</a></h2>
+<h3>Convert GEE JavaScript to Python<a class="headerlink" href="#convert-gee-javascript-to-python" title="Link to this heading">#</a></h3>
 <p><a class="reference external" href="https://developers.google.com/earth-engine/guides/image_visualization">https://developers.google.com/earth-engine/guides/image_visualization</a></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -763,9 +759,9 @@ document.write(`
 </section>
 </section>
 <section id="earth-engine-datasets">
-<h1>Earth Engine datasets<a class="headerlink" href="#earth-engine-datasets" title="Link to this heading">#</a></h1>
+<h2>Earth Engine datasets<a class="headerlink" href="#earth-engine-datasets" title="Link to this heading">#</a></h2>
 <section id="load-earth-engine-datasets">
-<h2>Load Earth Engine datasets<a class="headerlink" href="#load-earth-engine-datasets" title="Link to this heading">#</a></h2>
+<h3>Load Earth Engine datasets<a class="headerlink" href="#load-earth-engine-datasets" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Map</span> <span class="o">=</span> <span class="n">geemap</span><span class="o">.</span><span class="n">Map</span><span class="p">()</span>
@@ -800,7 +796,7 @@ document.write(`
 </div>
 </section>
 <section id="search-the-earth-engine-data-catalog">
-<h2>Search the Earth Engine Data Catalog<a class="headerlink" href="#search-the-earth-engine-data-catalog" title="Link to this heading">#</a></h2>
+<h3>Search the Earth Engine Data Catalog<a class="headerlink" href="#search-the-earth-engine-data-catalog" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Map</span> <span class="o">=</span> <span class="n">geemap</span><span class="o">.</span><span class="n">Map</span><span class="p">()</span>
@@ -832,7 +828,7 @@ document.write(`
 </div>
 </section>
 <section id="use-the-datasets-module">
-<h2>Use the datasets module<a class="headerlink" href="#use-the-datasets-module" title="Link to this heading">#</a></h2>
+<h3>Use the datasets module<a class="headerlink" href="#use-the-datasets-module" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">geemap.datasets</span> <span class="kn">import</span> <span class="n">DATA</span>
@@ -860,7 +856,7 @@ document.write(`
 </div>
 </section>
 <section id="use-the-inspector-tool">
-<h2>Use the Inspector tool<a class="headerlink" href="#use-the-inspector-tool" title="Link to this heading">#</a></h2>
+<h3>Use the Inspector tool<a class="headerlink" href="#use-the-inspector-tool" title="Link to this heading">#</a></h3>
 <p><img alt="" src="https://i.imgur.com/drnfJ6N.png" /></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -899,9 +895,9 @@ document.write(`
 </section>
 </section>
 <section id="data-visualization">
-<h1>Data visualization<a class="headerlink" href="#data-visualization" title="Link to this heading">#</a></h1>
+<h2>Data visualization<a class="headerlink" href="#data-visualization" title="Link to this heading">#</a></h2>
 <section id="use-the-plotting-tool">
-<h2>Use the Plotting tool<a class="headerlink" href="#use-the-plotting-tool" title="Link to this heading">#</a></h2>
+<h3>Use the Plotting tool<a class="headerlink" href="#use-the-plotting-tool" title="Link to this heading">#</a></h3>
 <p><img alt="" src="https://i.imgur.com/t4jKsNo.png" /></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -932,7 +928,7 @@ document.write(`
 </div>
 </section>
 <section id="change-layer-opacity">
-<h2>Change layer opacity<a class="headerlink" href="#change-layer-opacity" title="Link to this heading">#</a></h2>
+<h3>Change layer opacity<a class="headerlink" href="#change-layer-opacity" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Map</span> <span class="o">=</span> <span class="n">geemap</span><span class="o">.</span><span class="n">Map</span><span class="p">(</span><span class="n">center</span><span class="o">=</span><span class="p">(</span><span class="mi">40</span><span class="p">,</span> <span class="o">-</span><span class="mi">100</span><span class="p">),</span> <span class="n">zoom</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
@@ -956,7 +952,7 @@ document.write(`
 </div>
 </section>
 <section id="visualize-raster-data">
-<h2>Visualize raster data<a class="headerlink" href="#visualize-raster-data" title="Link to this heading">#</a></h2>
+<h3>Visualize raster data<a class="headerlink" href="#visualize-raster-data" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Map</span> <span class="o">=</span> <span class="n">geemap</span><span class="o">.</span><span class="n">Map</span><span class="p">(</span><span class="n">center</span><span class="o">=</span><span class="p">(</span><span class="mi">40</span><span class="p">,</span> <span class="o">-</span><span class="mi">100</span><span class="p">),</span> <span class="n">zoom</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
@@ -986,7 +982,7 @@ document.write(`
 </div>
 </section>
 <section id="visualize-vector-data">
-<h2>Visualize vector data<a class="headerlink" href="#visualize-vector-data" title="Link to this heading">#</a></h2>
+<h3>Visualize vector data<a class="headerlink" href="#visualize-vector-data" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Map</span> <span class="o">=</span> <span class="n">geemap</span><span class="o">.</span><span class="n">Map</span><span class="p">()</span>
@@ -1021,7 +1017,7 @@ document.write(`
 </div>
 </section>
 <section id="add-a-legend">
-<h2>Add a legend<a class="headerlink" href="#add-a-legend" title="Link to this heading">#</a></h2>
+<h3>Add a legend<a class="headerlink" href="#add-a-legend" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">legends</span> <span class="o">=</span> <span class="n">geemap</span><span class="o">.</span><span class="n">builtin_legends</span>
@@ -1081,7 +1077,7 @@ document.write(`
 </div>
 </section>
 <section id="add-a-colorbar">
-<h2>Add a colorbar<a class="headerlink" href="#add-a-colorbar" title="Link to this heading">#</a></h2>
+<h3>Add a colorbar<a class="headerlink" href="#add-a-colorbar" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Map</span> <span class="o">=</span> <span class="n">geemap</span><span class="o">.</span><span class="n">Map</span><span class="p">()</span>
@@ -1143,7 +1139,7 @@ document.write(`
 </div>
 </section>
 <section id="create-a-split-panel-map">
-<h2>Create a split-panel map<a class="headerlink" href="#create-a-split-panel-map" title="Link to this heading">#</a></h2>
+<h3>Create a split-panel map<a class="headerlink" href="#create-a-split-panel-map" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Map</span> <span class="o">=</span> <span class="n">geemap</span><span class="o">.</span><span class="n">Map</span><span class="p">()</span>
@@ -1181,7 +1177,7 @@ document.write(`
 </div>
 </section>
 <section id="create-linked-maps">
-<h2>Create linked maps<a class="headerlink" href="#create-linked-maps" title="Link to this heading">#</a></h2>
+<h3>Create linked maps<a class="headerlink" href="#create-linked-maps" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">image</span> <span class="o">=</span> <span class="p">(</span>
@@ -1222,7 +1218,7 @@ document.write(`
 </div>
 </section>
 <section id="create-timelapse-animations">
-<h2>Create timelapse animations<a class="headerlink" href="#create-timelapse-animations" title="Link to this heading">#</a></h2>
+<h3>Create timelapse animations<a class="headerlink" href="#create-timelapse-animations" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">geemap</span><span class="o">.</span><span class="n">show_youtube</span><span class="p">(</span><span class="s2">&quot;https://youtu.be/mA21Us_3m28&quot;</span><span class="p">)</span>
@@ -1232,7 +1228,7 @@ document.write(`
 </div>
 </section>
 <section id="create-time-series-composites">
-<h2>Create time-series composites<a class="headerlink" href="#create-time-series-composites" title="Link to this heading">#</a></h2>
+<h3>Create time-series composites<a class="headerlink" href="#create-time-series-composites" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">geemap</span><span class="o">.</span><span class="n">show_youtube</span><span class="p">(</span><span class="s2">&quot;https://youtu.be/kEltQkNia6o&quot;</span><span class="p">)</span>
@@ -1243,9 +1239,9 @@ document.write(`
 </section>
 </section>
 <section id="data-analysis">
-<h1>Data analysis<a class="headerlink" href="#data-analysis" title="Link to this heading">#</a></h1>
+<h2>Data analysis<a class="headerlink" href="#data-analysis" title="Link to this heading">#</a></h2>
 <section id="descriptive-statistics">
-<h2>Descriptive statistics<a class="headerlink" href="#descriptive-statistics" title="Link to this heading">#</a></h2>
+<h3>Descriptive statistics<a class="headerlink" href="#descriptive-statistics" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Map</span> <span class="o">=</span> <span class="n">geemap</span><span class="o">.</span><span class="n">Map</span><span class="p">()</span>
@@ -1295,7 +1291,7 @@ document.write(`
 </div>
 </section>
 <section id="zonal-statistics">
-<h2>Zonal statistics<a class="headerlink" href="#zonal-statistics" title="Link to this heading">#</a></h2>
+<h3>Zonal statistics<a class="headerlink" href="#zonal-statistics" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Map</span> <span class="o">=</span> <span class="n">geemap</span><span class="o">.</span><span class="n">Map</span><span class="p">()</span>
@@ -1351,7 +1347,7 @@ document.write(`
 </div>
 </section>
 <section id="zonal-statistics-by-group">
-<h2>Zonal statistics by group<a class="headerlink" href="#zonal-statistics-by-group" title="Link to this heading">#</a></h2>
+<h3>Zonal statistics by group<a class="headerlink" href="#zonal-statistics-by-group" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Map</span> <span class="o">=</span> <span class="n">geemap</span><span class="o">.</span><span class="n">Map</span><span class="p">()</span>
@@ -1392,7 +1388,7 @@ document.write(`
 </div>
 </section>
 <section id="unsupervised-classification">
-<h2>Unsupervised classification<a class="headerlink" href="#unsupervised-classification" title="Link to this heading">#</a></h2>
+<h3>Unsupervised classification<a class="headerlink" href="#unsupervised-classification" title="Link to this heading">#</a></h3>
 <p>Source: <a class="reference external" href="https://developers.google.com/earth-engine/guides/clustering">https://developers.google.com/earth-engine/guides/clustering</a></p>
 <p>The <code class="docutils literal notranslate"><span class="pre">ee.Clusterer</span></code> package handles unsupervised classification (or clustering) in Earth Engine. These algorithms are currently based on the algorithms with the same name in <a class="reference external" href="http://www.cs.waikato.ac.nz/ml/weka/">Weka</a>. More details about each Clusterer are available in the reference docs in the Code Editor.</p>
 <p>Clusterers are used in the same manner as classifiers in Earth Engine. The general workflow for clustering is:</p>
@@ -1535,7 +1531,7 @@ document.write(`
 </div>
 </section>
 <section id="supervised-classification">
-<h2>Supervised classification<a class="headerlink" href="#supervised-classification" title="Link to this heading">#</a></h2>
+<h3>Supervised classification<a class="headerlink" href="#supervised-classification" title="Link to this heading">#</a></h3>
 <p>Source: <a class="reference external" href="https://developers.google.com/earth-engine/guides/classification">https://developers.google.com/earth-engine/guides/classification</a></p>
 <p>The <code class="docutils literal notranslate"><span class="pre">Classifier</span></code> package handles supervised classification by traditional ML algorithms running in Earth Engine. These classifiers include CART, RandomForest, NaiveBayes and SVM. The general workflow for classification is:</p>
 <ol class="arabic simple">
@@ -1715,7 +1711,7 @@ document.write(`
 </div>
 </section>
 <section id="training-sample-creation">
-<h2>Training sample creation<a class="headerlink" href="#training-sample-creation" title="Link to this heading">#</a></h2>
+<h3>Training sample creation<a class="headerlink" href="#training-sample-creation" title="Link to this heading">#</a></h3>
 <p><img alt="" src="https://i.imgur.com/QQDjcPt.png" /></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1734,7 +1730,7 @@ document.write(`
 </div>
 </section>
 <section id="whiteboxtools">
-<h2>WhiteboxTools<a class="headerlink" href="#whiteboxtools" title="Link to this heading">#</a></h2>
+<h3>WhiteboxTools<a class="headerlink" href="#whiteboxtools" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">whiteboxgui</span>
@@ -1768,9 +1764,9 @@ document.write(`
 </section>
 </section>
 <section id="map-making">
-<h1>Map making<a class="headerlink" href="#map-making" title="Link to this heading">#</a></h1>
+<h2>Map making<a class="headerlink" href="#map-making" title="Link to this heading">#</a></h2>
 <section id="plot-a-single-band-image">
-<h2>Plot a single band image<a class="headerlink" href="#plot-a-single-band-image" title="Link to this heading">#</a></h2>
+<h3>Plot a single band image<a class="headerlink" href="#plot-a-single-band-image" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -1825,7 +1821,7 @@ document.write(`
 </div>
 </section>
 <section id="plot-an-rgb-image">
-<h2>Plot an RGB image<a class="headerlink" href="#plot-an-rgb-image" title="Link to this heading">#</a></h2>
+<h3>Plot an RGB image<a class="headerlink" href="#plot-an-rgb-image" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># get a landsat image to visualize</span>
@@ -1873,7 +1869,7 @@ document.write(`
 </div>
 </section>
 <section id="add-map-elements">
-<h2>Add map elements<a class="headerlink" href="#add-map-elements" title="Link to this heading">#</a></h2>
+<h3>Add map elements<a class="headerlink" href="#add-map-elements" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">matplotlib.lines</span> <span class="kn">import</span> <span class="n">Line2D</span>
@@ -1945,7 +1941,7 @@ document.write(`
 </div>
 </section>
 <section id="plot-multiple-layers">
-<h2>Plot multiple layers<a class="headerlink" href="#plot-multiple-layers" title="Link to this heading">#</a></h2>
+<h3>Plot multiple layers<a class="headerlink" href="#plot-multiple-layers" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Map</span> <span class="o">=</span> <span class="n">geemap</span><span class="o">.</span><span class="n">Map</span><span class="p">()</span>
@@ -2048,7 +2044,7 @@ document.write(`
 </div>
 </section>
 <section id="use-custom-projections">
-<h2>Use custom projections<a class="headerlink" href="#use-custom-projections" title="Link to this heading">#</a></h2>
+<h3>Use custom projections<a class="headerlink" href="#use-custom-projections" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">cartopy.crs</span> <span class="k">as</span> <span class="nn">ccrs</span>
@@ -2190,7 +2186,7 @@ document.write(`
 </div>
 </section>
 <section id="id1">
-<h2>Create timelapse animations<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<h3>Create timelapse animations<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Map</span> <span class="o">=</span> <span class="n">geemap</span><span class="o">.</span><span class="n">Map</span><span class="p">()</span>
@@ -2306,9 +2302,9 @@ document.write(`
 </section>
 </section>
 <section id="data-export">
-<h1>Data export<a class="headerlink" href="#data-export" title="Link to this heading">#</a></h1>
+<h2>Data export<a class="headerlink" href="#data-export" title="Link to this heading">#</a></h2>
 <section id="export-ee-image">
-<h2>Export ee.Image<a class="headerlink" href="#export-ee-image" title="Link to this heading">#</a></h2>
+<h3>Export ee.Image<a class="headerlink" href="#export-ee-image" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Map</span> <span class="o">=</span> <span class="n">geemap</span><span class="o">.</span><span class="n">Map</span><span class="p">()</span>
@@ -2388,7 +2384,7 @@ document.write(`
 </div>
 </section>
 <section id="export-ee-imagecollection">
-<h2>Export ee.ImageCollection<a class="headerlink" href="#export-ee-imagecollection" title="Link to this heading">#</a></h2>
+<h3>Export ee.ImageCollection<a class="headerlink" href="#export-ee-imagecollection" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">loc</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">Geometry</span><span class="o">.</span><span class="n">Point</span><span class="p">(</span><span class="o">-</span><span class="mf">99.2222</span><span class="p">,</span> <span class="mf">46.7816</span><span class="p">)</span>
@@ -2425,7 +2421,7 @@ document.write(`
 </div>
 </section>
 <section id="extract-pixels-as-a-numpy-array">
-<h2>Extract pixels as a numpy array<a class="headerlink" href="#extract-pixels-as-a-numpy-array" title="Link to this heading">#</a></h2>
+<h3>Extract pixels as a numpy array<a class="headerlink" href="#extract-pixels-as-a-numpy-array" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -2453,7 +2449,7 @@ document.write(`
 </div>
 </section>
 <section id="export-pixel-values-to-points">
-<h2>Export pixel values to points<a class="headerlink" href="#export-pixel-values-to-points" title="Link to this heading">#</a></h2>
+<h3>Export pixel values to points<a class="headerlink" href="#export-pixel-values-to-points" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Map</span> <span class="o">=</span> <span class="n">geemap</span><span class="o">.</span><span class="n">Map</span><span class="p">()</span>
@@ -2519,7 +2515,7 @@ document.write(`
 </div>
 </section>
 <section id="export-ee-featurecollection">
-<h2>Export ee.FeatureCollection<a class="headerlink" href="#export-ee-featurecollection" title="Link to this heading">#</a></h2>
+<h3>Export ee.FeatureCollection<a class="headerlink" href="#export-ee-featurecollection" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Map</span> <span class="o">=</span> <span class="n">geemap</span><span class="o">.</span><span class="n">Map</span><span class="p">()</span>
@@ -2572,9 +2568,9 @@ document.write(`
 </section>
 </section>
 <section id="web-apps">
-<h1>Web apps<a class="headerlink" href="#web-apps" title="Link to this heading">#</a></h1>
+<h2>Web apps<a class="headerlink" href="#web-apps" title="Link to this heading">#</a></h2>
 <section id="deploy-web-apps-using-ngrok">
-<h2>Deploy web apps using ngrok<a class="headerlink" href="#deploy-web-apps-using-ngrok" title="Link to this heading">#</a></h2>
+<h3>Deploy web apps using ngrok<a class="headerlink" href="#deploy-web-apps-using-ngrok" title="Link to this heading">#</a></h3>
 <p><strong>Steps to deploy an Earth Engine App:</strong></p>
 <ol class="arabic simple">
 <li><p>Install ngrok by following the <a class="reference external" href="https://ngrok.com/download">instruction</a></p></li>
@@ -2599,7 +2595,7 @@ document.write(`
 </div>
 </section>
 <section id="deploy-web-apps-using-heroku">
-<h2>Deploy web apps using Heroku<a class="headerlink" href="#deploy-web-apps-using-heroku" title="Link to this heading">#</a></h2>
+<h3>Deploy web apps using Heroku<a class="headerlink" href="#deploy-web-apps-using-heroku" title="Link to this heading">#</a></h3>
 <p><strong>Steps to deploy an Earth Engine App:</strong></p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://signup.heroku.com/">Sign up</a> for a free heroku account.</p></li>
@@ -2632,6 +2628,7 @@ document.write(`
 </div>
 </div>
 </div>
+</section>
 </section>
 </section>
 
@@ -2699,78 +2696,77 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Introduction</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#description">Description</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#useful-links">Useful links</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisite">Prerequisite</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-up-a-conda-environment">Set up a conda environment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#description">Description</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#useful-links">Useful links</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisite">Prerequisite</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#set-up-a-conda-environment">Set up a conda environment</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#geemap-basics">geemap basics</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#import-libraries">Import libraries</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-an-interactive-map">Create an interactive map</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#customize-the-default-map">Customize the default map</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#add-basemaps">Add basemaps</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#change-basemaps-without-coding">Change basemaps without coding</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#add-wms-and-xyz-tile-layers">Add WMS and XYZ tile layers</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#use-drawing-tools">Use drawing tools</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#convert-gee-javascript-to-python">Convert GEE JavaScript to Python</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geemap-basics">geemap basics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#import-libraries">Import libraries</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-an-interactive-map">Create an interactive map</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#customize-the-default-map">Customize the default map</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#add-basemaps">Add basemaps</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#change-basemaps-without-coding">Change basemaps without coding</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#add-wms-and-xyz-tile-layers">Add WMS and XYZ tile layers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#use-drawing-tools">Use drawing tools</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#convert-gee-javascript-to-python">Convert GEE JavaScript to Python</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#earth-engine-datasets">Earth Engine datasets</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-earth-engine-datasets">Load Earth Engine datasets</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#search-the-earth-engine-data-catalog">Search the Earth Engine Data Catalog</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#use-the-datasets-module">Use the datasets module</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#use-the-inspector-tool">Use the Inspector tool</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#earth-engine-datasets">Earth Engine datasets</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#load-earth-engine-datasets">Load Earth Engine datasets</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#search-the-earth-engine-data-catalog">Search the Earth Engine Data Catalog</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#use-the-datasets-module">Use the datasets module</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#use-the-inspector-tool">Use the Inspector tool</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-visualization">Data visualization</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#use-the-plotting-tool">Use the Plotting tool</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#change-layer-opacity">Change layer opacity</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualize-raster-data">Visualize raster data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualize-vector-data">Visualize vector data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#add-a-legend">Add a legend</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#add-a-colorbar">Add a colorbar</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-split-panel-map">Create a split-panel map</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-linked-maps">Create linked maps</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-timelapse-animations">Create timelapse animations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-time-series-composites">Create time-series composites</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-visualization">Data visualization</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#use-the-plotting-tool">Use the Plotting tool</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#change-layer-opacity">Change layer opacity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visualize-raster-data">Visualize raster data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visualize-vector-data">Visualize vector data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#add-a-legend">Add a legend</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#add-a-colorbar">Add a colorbar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-split-panel-map">Create a split-panel map</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-linked-maps">Create linked maps</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-timelapse-animations">Create timelapse animations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-time-series-composites">Create time-series composites</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-analysis">Data analysis</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#descriptive-statistics">Descriptive statistics</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zonal-statistics">Zonal statistics</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zonal-statistics-by-group">Zonal statistics by group</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unsupervised-classification">Unsupervised classification</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#supervised-classification">Supervised classification</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#training-sample-creation">Training sample creation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#whiteboxtools">WhiteboxTools</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-analysis">Data analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#descriptive-statistics">Descriptive statistics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#zonal-statistics">Zonal statistics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#zonal-statistics-by-group">Zonal statistics by group</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unsupervised-classification">Unsupervised classification</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#supervised-classification">Supervised classification</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#training-sample-creation">Training sample creation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#whiteboxtools">WhiteboxTools</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#map-making">Map making</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-a-single-band-image">Plot a single band image</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-an-rgb-image">Plot an RGB image</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#add-map-elements">Add map elements</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-multiple-layers">Plot multiple layers</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#use-custom-projections">Use custom projections</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Create timelapse animations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#map-making">Map making</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-a-single-band-image">Plot a single band image</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-an-rgb-image">Plot an RGB image</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#add-map-elements">Add map elements</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-multiple-layers">Plot multiple layers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#use-custom-projections">Use custom projections</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Create timelapse animations</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-export">Data export</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#export-ee-image">Export ee.Image</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#export-ee-imagecollection">Export ee.ImageCollection</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extract-pixels-as-a-numpy-array">Extract pixels as a numpy array</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#export-pixel-values-to-points">Export pixel values to points</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#export-ee-featurecollection">Export ee.FeatureCollection</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-export">Data export</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#export-ee-image">Export ee.Image</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#export-ee-imagecollection">Export ee.ImageCollection</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extract-pixels-as-a-numpy-array">Extract pixels as a numpy array</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#export-pixel-values-to-points">Export pixel values to points</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#export-ee-featurecollection">Export ee.FeatureCollection</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#web-apps">Web apps</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deploy-web-apps-using-ngrok">Deploy web apps using ngrok</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deploy-web-apps-using-heroku">Deploy web apps using Heroku</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#web-apps">Web apps</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deploy-web-apps-using-ngrok">Deploy web apps using ngrok</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deploy-web-apps-using-heroku">Deploy web apps using Heroku</a></li>
 </ul>
 </li>
 </ul>
-
   </nav></div>
 
 </div></div>
