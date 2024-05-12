@@ -5,6 +5,7 @@
 
 #######################################################################################
 # Book settings
+
 title: Data Science # The title of the book. Will be placed in the left navbar.
 author: Corina Navarrete # The author of the book
 copyright: "2024" # Copyright year to be placed in the footer
